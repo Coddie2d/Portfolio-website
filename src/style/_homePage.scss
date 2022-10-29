@@ -1,0 +1,30 @@
+$blue: rgba(80,160,220,0.8);
+$triangleSize: 5em;
+$triangleShortSize: $triangleSize*calc(2/3);
+$triangleSmallSize: 0.9*$triangleSize;
+$triangleSmallShortSize: 0.9*$triangleShortSize;
+$backgroundColor: rgb(255,255,255);
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #31102f; //#280B29
+	background: radial-gradient(
+		ellipse at center,
+		rgba(49, 16, 47, 1) 0%,
+		rgba(40, 11, 41, 1) 100%
+	);
+}
+
+#stars {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 16rem;
+	height: 100vh;
+	z-index: 1;
+}
