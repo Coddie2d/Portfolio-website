@@ -4,34 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 </head>
 <body>
-    <canvas id="stars" width="1920" height="auto"></canvas>
-    <div class="header">
+    <header class="header">
+        <canvas id="stars" width="1920" height="auto"></canvas>
+        <section class="header__text_section">
+            <p class="header__title_first header__title title">Creative</p>
+            <p class="header__second_title header__title title">Developer</p>
+            <p class="header__third_title header__title title">Sensible to frontend</p>
+        </section>
+        <nav class="social_links header__nav">
+            <a href="#" class="img_link"><i class="icon icon-github-circled "></i></a>
+            <a href="#" class="img_link"><i class="icon icon-telegram "></i></a>
+            <a href="#" class="img_link"><i class="icon icon-linkedin "></i></a>
+        </nav>
+    </header>
+    
+    <section class="about">
+        <div class="container">
+            
         
-        <nav class="header_nav">
+        <nav class="about_nav">
             <div class="logo_side">
                 
                 <a href="">Coddie2d</a>
             </div>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#Contact">Contact</a>
+            <div class="about__links">    
+                <a href="#about" class="monserat link">About</a>
+                <a href="#portfolio" class="monserat link">Portfolio</a>
+                <a href="#Contact" class="monserat link">Contact</a>
+            </div>
         </nav>
-        <nav class="social_links">
-            <i class="icon-github-circled "></i>
-            <i class="icon-telegram "></i>
-            <i class="icon-linkedin "></i>
-        </nav>
-        
-        <section class="header__text_section">
-            <p class="header__title">Creative</p>
-            <p class="header__first_subtitle">Developer</p>
-            <p class="header__second_subtitle">Sensible to frontend</p>
-        </section>
-        
+
+        <div class="about__text">
+            <h1 class="title about__title">I am front-end developer </h1>
+            <p class="subtitle about__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nihil error ex corporis temporibus asperiores aperiam aut nam sunt maxime.</p>
+        </div>
+        <main class="about__skills">
+            <div class="skill">
+                <p class="about__knowledge_of_skill text">99%</p>
+                <div class="about__main_line ">
+                    <div class="about__main_line_inner" data-back="100%">
+                        <div class="about__second_line" data-front="90%"> </div>
+                    </div>
+                        <p class="about__name_of_skill text">html</p>
+                </div>
+            </div>
+            <div class="skill">
+                <p class="about__knowledge_of_skill text">90%</p>
+                <div class="about__main_line">
+                    <div class="about__main_line_inner">
+                        <div class="about__second_line"> </div>
+                    </div>
+                        <p class="about__name_of_skill text">scss</p>
+                </div>
+            </div>
+            <div class="skill">
+                <p class="about__knowledge_of_skill text">80%</p>
+                <div class="about__main_line">
+                    <div class="about__main_line_inner">
+                        <div class="about__second_line"> </div>
+                    </div>
+                        <p class="about__name_of_skill text">JavaScript</p>
+                </div>
+            </div>
+            <div class="skill">
+                <p class="about__knowledge_of_skill text">80%</p>
+                <div class="about__main_line">
+                    <div class="about__main_line_inner">
+                        <div class="about__second_line"> </div>
+                    </div>
+                        <p class="about__name_of_skill text">webpack</p>
+                </div>
+            </div>
+        </main>
+       
     </div>
- 
+    </section>
+    <script src="https://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+    <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
 </body>
 </html>

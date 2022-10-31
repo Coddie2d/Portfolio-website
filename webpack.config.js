@@ -3,7 +3,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 require('graceful-fs').gracefulify(require('fs'));
 
-const pages = ["index","second"];
+const pages = ["index"];
 
 module.exports = {
     

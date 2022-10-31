@@ -1,30 +1,161 @@
+@import "~bootstrap/scss/bootstrap";
 $blue: rgba(80,160,220,0.8);
 $triangleSize: 5em;
 $triangleShortSize: $triangleSize*calc(2/3);
 $triangleSmallSize: 0.9*$triangleSize;
 $triangleSmallShortSize: 0.9*$triangleShortSize;
 $backgroundColor: rgb(255,255,255);
-
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 html,
-body {
+body, p ,h1,h2,h3,h4,h5,h6, li, ul {
+	
 	margin: 0;
 	padding: 0;
 }
-
-body {
+#stars {
 	background-color: #31102f; //#280B29
 	background: radial-gradient(
 		ellipse at center,
 		rgba(49, 16, 47, 1) 0%,
 		rgba(40, 11, 41, 1) 100%
 	);
-}
-
-#stars {
 	display: block;
 	position: relative;
 	width: 100%;
 	height: 16rem;
 	height: 100vh;
-	z-index: 1;
+	z-index: 0;
+}
+
+.monserat{
+	font-family: "Montserrat";
+}
+.title{
+	font-family: "Montserrat";
+	font-size: 40px;
+	text-transform: uppercase;
+	color: white;
+}
+.subtitle{
+	font-family: Georgia;
+	font-size: 20px;
+	color: white;
+}
+.text{
+	color: white;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family:Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+}
+.social_links {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(-5%,-50%);
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	
+	.img_link{
+		margin: 3px 0;
+		color: white;
+	}
+}
+
+.header {
+	position: relative;
+	.header__text_section {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.header__title{
+	
+	}
+	.header__title_first {
+		font-size: 60px;
+		letter-spacing: 10px;
+		font-weight: 500;
+	}
+	
+	.header__second_title {
+		font-size: 45px;
+		letter-spacing: 5px;
+	}
+	.header__third_title {
+		letter-spacing: 1px;
+		font-weight: 200;
+	}
+	
+	.header__nav {
+	}
+	.icon {
+	}
+	.icon-github-circled {
+	}
+	.icon-telegram {
+	}
+	.icon-linkedin {
+	}
+	
+}
+	.about{
+		background-color: black;
+		position: relative;
+
+	.about_nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0 ;
+	}
+
+	.about__links {
+	}
+	.about__text {
+		
+	}
+	.about__skills {
+		
+		.skill {
+			.about__main_line{
+				display: flex;
+				align-items: center;
+				.about__main_line_inner {
+					display: flex;
+					height: 15px;
+					background-color: #666666;
+					width: 100%;
+					position: relative;
+					z-index: 0;
+					border-radius: 5px;
+				}
+				.about__second_line {
+					height: 15px;
+					width: 95%;
+					background-color: #FFFFFF;
+					position: relative;
+					z-index: 1;
+					border-radius: 5px;
+				}
+				.about__name_of_skill{
+					padding-left: 5px;
+				}
+			}
+		}
+	}
+		
+	
+
 }
