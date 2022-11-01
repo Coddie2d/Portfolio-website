@@ -23,21 +23,24 @@
     </header>
     
     <section class="about">
-        <div class="container">
+        
             
         
         <nav class="about_nav">
+            <div class="container d-flex justify-content-between">
             <div class="logo_side">
                 
-                <a href="">Coddie2d</a>
+                <a href="" class="about__nav_link monserat">Coddie2d</a>
             </div>
-            <div class="about__links">    
-                <a href="#about" class="monserat link">About</a>
-                <a href="#portfolio" class="monserat link">Portfolio</a>
-                <a href="#Contact" class="monserat link">Contact</a>
+            
+                <div class="about__links">    
+                    <a href="#about" class="monserat link  about__nav_link">About</a>
+                    <a href="#portfolio" class="monserat link about__nav_link">Portfolio</a>
+                    <a href="#Contact" class="monserat link about__nav_link">Contact</a>
+                </div>
             </div>
         </nav>
-
+    <div class="container">
         <div class="about__text">
             <h1 class="title about__title">I am front-end developer </h1>
             <p class="subtitle about__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nihil error ex corporis temporibus asperiores aperiam aut nam sunt maxime.</p>
@@ -46,8 +49,8 @@
             <div class="skill">
                 <p class="about__knowledge_of_skill text">99%</p>
                 <div class="about__main_line ">
-                    <div class="about__main_line_inner" data-back="100%">
-                        <div class="about__second_line" data-front="90%"> </div>
+                    <div class="about__main_line_inner"  data-back="100%">
+                        <div class="about__second_line html_front"   data-html="95%"> </div>
                     </div>
                         <p class="about__name_of_skill text">html</p>
                 </div>
@@ -55,8 +58,8 @@
             <div class="skill">
                 <p class="about__knowledge_of_skill text">90%</p>
                 <div class="about__main_line">
-                    <div class="about__main_line_inner">
-                        <div class="about__second_line"> </div>
+                    <div class="about__main_line_inner"  data-scss-back="100%" >
+                        <div class="about__second_line scss_front"  data-scss="90%"> </div>
                     </div>
                         <p class="about__name_of_skill text">scss</p>
                 </div>
@@ -64,25 +67,29 @@
             <div class="skill">
                 <p class="about__knowledge_of_skill text">80%</p>
                 <div class="about__main_line">
-                    <div class="about__main_line_inner">
-                        <div class="about__second_line"> </div>
+                    <div class="about__main_line_inner "  >
+                        <div class="about__second_line javascript_front"  data-js="90%"> </div>
                     </div>
-                        <p class="about__name_of_skill text">JavaScript</p>
+                        <p class="about__name_of_skill text">javascript</p>
                 </div>
             </div>
             <div class="skill">
                 <p class="about__knowledge_of_skill text">80%</p>
                 <div class="about__main_line">
-                    <div class="about__main_line_inner">
-                        <div class="about__second_line"> </div>
+                    <div class="about__main_line_inner"  data-webpack-back="100%">
+                        <div class="about__second_line webpack_front"  data-webpack="90%"> </div>
                     </div>
                         <p class="about__name_of_skill text">webpack</p>
                 </div>
             </div>
+            
         </main>
        
     </div>
-    </section>
+    <p class="about__number_of_page number_of_page">00</p>
+</div>
+</section>
+
     <script src="https://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
     <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
 </body>

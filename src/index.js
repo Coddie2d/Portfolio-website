@@ -576,3 +576,18 @@ function random(min, max, float) {
 
 // init
 if (canvas) init();
+
+
+let backLine = document.querySelector('.about__main_line_inner');
+let frontHtmlLine = document.querySelector('.html_front');
+let frontScssLine = document.querySelector('.scss_front');
+let frontJsLine = document.querySelector(' .javascript_front');
+let frontWebpackLine = document.querySelector(' .webpack_front');
+
+
+frontHtmlLine.style.width = frontHtmlLine.dataset.html;
+frontScssLine.style.width = frontScssLine.dataset.scss;
+frontJsLine.style.width = frontJsLine.dataset.js;
+frontWebpackLine.style.width = frontWebpackLine.dataset.webpack;
+
+
