@@ -115,7 +115,7 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 	.about{
 		background-color: black;
 		position: relative;
-
+		padding-bottom: 40px;
 	.about_nav {
 		width: 100%;
 		display: flex;
@@ -152,10 +152,34 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 		font-size: 20px;
 		text-transform: uppercase;
 	}
+	.about__logos > * {
+		position: absolute;
+	}
+	.about__logos{
+		display: flex;
+		position: relative;
+		.logo_size {
+		
+		}
+		.html {
+		}
+		.css {
+			
+		}
+		.js {
+			
+		}
+		.webpack {
+		}
+		.sass {
+		}
+		
+	}
 	.about__skills {
 		max-width: 1000px;
 		margin: 0 auto;
 		.skill {
+			padding: 20px 0 ;
 			.about__main_line{
 				display: flex;
 				align-items: center;
@@ -180,13 +204,18 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 				}
 			}
 		}
+		
+		
 	}
 			
 	.number_of_page{
+		position: relative;
 		font-family: "Montserrat";
-		font-size: 60px;
-		font-weight: 600;
+		font-size: 120px;
+		font-weight: 700;
+		left: 5%;
 		color: white;
+		font-family: "Albert Sans";
 	}
 	.number_of_page::before{
 		width: 10px;
