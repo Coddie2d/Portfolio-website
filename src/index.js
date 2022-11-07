@@ -5,7 +5,7 @@ import $ from 'jquery';
 import * as delaunay from "../src/plugins/delaunay"
 import * as requirejs from "../src/plugins/require"
 
-//header background settings
+//header background settings //
 var particleCount = 40,
 	flareCount = 10,
 	motion = 0.05,
