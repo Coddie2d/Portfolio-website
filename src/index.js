@@ -1,6 +1,6 @@
 import "./style/index.scss"
 import * as bootstrap from 'bootstrap'
-import * as fontello from '../src/icons/fontello-a34828e2/css/fontello.css'
+import * as fontello from '../src/icons/fontello-1e7cdb3f/css/fontello.css'
 import $ from 'jquery';
 import * as delaunay from "../src/plugins/delaunay"
 import * as requirejs from "../src/plugins/require"

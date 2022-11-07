@@ -10,6 +10,16 @@ $sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
 }
 
 @include media('min','xl'){
+        .text_for_arrow_down{
+            font-size: 25px;
+        }
+        .social_link_size{
+            font-size: 30px;        
+        }
+        .portfolio__img{
+            width: 330px;
+            height: 220px;
+        }
         .about__knowledge_of_skill{
             font-size: 25px;        
         }
@@ -138,136 +148,74 @@ $sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
     }
 
 
-    @include media('max','xl'){
-            .about__knowledge_of_skill{
-                font-size: 25px;        
-            }
-            .about__second_line,
-            .about__main_line_inner{
-                height: 25px !important;
-            }
-            .about {
-                .about__logos{
-              
-                    transform: translate(20%,0%);
-                }
-            }
-            .logo_size {
-                width: 170px;
-                height: 170px;
-            }
-            .html {
-            }
-            .css {
-                height: 180px ;
-            }
-            .js {
-                width: 155px !important;
-               
-            }
-            .webpack {
-            }
-            .sass {
-            }
-            .about__html_block_title {
-              
-                display: none;
-    
-            }
-            .about__html_block {
-                transform: translate(-30%,-10%) rotate(-45deg);
-                z-index: 2;
-                transition: width 5s 1s;
-            }
-            .about__html_block:hover{
-                transform: translate(-70%,-35%) rotate(-45deg);
-                transition: transform 1s ease 0.2s;
-                z-index: 5;
-                .about__html_block_title{
-                    display: flex;
-                    justify-content: center;
-                   
-                }
-            }
-            
-            .about__css_block {
-                
-                transform: translate(5%,-25%) ;
-                z-index: 3;
-            }
-            .about__css_block:hover{
-                transform: translate(0%,-60%);
-                transition: transform 1s ease 0.2s;
-                z-index: 5;
-                .about__css_block_title{
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-            .about__css_block_title {
-                display: none;
-            }
+@include media('max','xl'){
+    .text_for_arrow_down{
+        font-size: 22px;
+    }
+    .social_link_size{
+        font-size: 20px;        
+    }
+    .portfolio__img{
+        width: 290px;
+        height: 220px;
+    }
+    .button_link{
+        transform: translate(50%, -100%);
+    }
+    .portfolio__work:hover{
         
-            .about__js_block {
-                transform: translate(35%,-10%) rotate(45deg);
-                z-index: 4;
-               
-            }
-            .about__js_block_title {
-                display: none;
-            }
-            .about__js_block:hover{
-                transform: translate(55%,-25%) rotate(45deg);
-                transition: transform 1s ease 0.2s;
-                .about__js_block_title{
-                    display: flex;
-                    justify-content: center;
-                    position: relative;
-                    transform: translate(-5%,0%);
-                    font-size: 30px;
-                }
-            }
-            .about__webpack_block {
-                transform: translate(25%,40%);
-                z-index: 1;
-            }
-            .about__webpack_block_title {
-                display: none;
-            }
-            .about__webpack_block:hover{
-                transform: translate(35%,45%) ;
-                transition: transform 1s ease 0.2s;
-    
-                .about__webpack_block_title{
-                    display: flex;
-                    justify-content: center;
-                    position: relative;
-                    transform: translate(-10%,440%);
-                }
-            }
-            .about__sass_block {
-                transform: translate(-40%,60%) rotate(45deg);
-                z-index: 0;
-            }
-            .about__sass_block_title {
-                display: none;
-            }
-            .about__sass_block:hover{
-                transform: translate(-45%,85%) rotate(45deg) ;
-                transition: transform 1s ease 0.2s;
-                .about__sass_block_title{
-                    display: flex;
-                    justify-content: center;
-                    position: relative;
-                    transform: translate(0%,420%) rotate(-15deg);
-                }
-            }
-            
+        .button_link{
+            transform: translate(50%, -160%);
         }
+    }
+}
+
+
 @include media("max","lg"){
     .about__skills{
         max-width: 600px !important;
+    }
+    .text_for_arrow_down{
+
     }   
+    .portfolio__img{
+        width: 180px !important;
+        height: 130px !important;
+    }
+    .portfolio__works{
+        display: flex;
+        justify-content: center;
+    }
+    .button_link{
+        transform: translate(-50%,-100%);
+        left: 50%;
+    }
+    .portfolio__img_title{
+        font-size: 20px;
+    }
+    .portfolio__img_subtitle{
+        font-size: 15px;
+    }
+
+    .portfolio__img_button{
+        padding: 3px 0;
+        width: 100px !important;
+    }
+    .portfolio__work:hover{
+        .portfolio__img_button{
+        
+            font-size: 12px !important;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        
+        .button_link{
+            transform: translate(-50%,-160%);
+        }
+    }
+    
 }
 @media(max-width:1750px){
     
@@ -276,4 +224,14 @@ $sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
             transform: translate(50%, 260%) !important;
         }
     
+}
+
+
+@include media('max','md'){
+    .social_links{
+        left: 10%;
+    }
+    .text_for_arrow_down{
+        left: 90%;
+    }
 }

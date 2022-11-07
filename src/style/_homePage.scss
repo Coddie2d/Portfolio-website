@@ -19,6 +19,9 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+body{
+	background-color: black;
+}
 html,
 body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 	
@@ -39,6 +42,34 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 	height: 100vh;
 	z-index: 0;
 }
+.number_of_page{
+	position: relative;
+	font-size: 120px;
+	font-weight: 700;
+
+	color: white;
+	font-family: "Albert Sans";
+	display: inline;
+	&:after{
+		position: absolute;
+		content: '';
+		height: 2px;
+		background-color: white;
+		bottom: 15px;
+		margin: 0 auto;
+		left: 0;
+	  right: 0;
+		width:50%;
+		transition: width 2s 0.2s;
+	}
+	
+}
+.number_of_page:hover::after{
+	width:100%;
+
+}
+  
+
 
 .monserat{
 	font-family: "Montserrat";
@@ -62,9 +93,8 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 }
 .social_links {
 	position: absolute;
-	top: 50%;
-	left: 5%;
-	transform: translate(-5%,-50%);
+	top: 50% + 10%;
+	transform: translate(-150%,-50%);
 	z-index: 5;
 	display: flex;
 	flex-direction: column;
@@ -211,58 +241,54 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 		
 	}
 			
-	.number_of_page{
-		position: relative;
-		font-family: "Montserrat";
-		font-size: 120px;
-		font-weight: 700;
-		left: 5%;
-		color: white;
-		font-family: "Albert Sans";
-	}
-	.number_of_page::before{
-		width: 10px;
-		background-color: white;
-		height: 3px;
-	}
+	
 }
 
-
+.portfolio__container{
+	position: relative;
+}
 .portfolio {
 	background-color: black;
-}
+	position: relative;
+}	
 	.portfolio__works {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
-	}
+		transform: translate(0%,50%);
+	
 		.portfolio__work {
 			position: relative;
-		}
+			margin: 10px 10px;
+		
 			.portfolio__img {
-				width: 330px;
-				height: 220px;
+			
 				border-radius: 5px;
 				
+			}
 		}
-
-		.portfolio__img_inner_top {
-			display: none;
-			transform: translate(0%, 0%);
-		}
+	}
 		.portfolio__img_title {
-			display: none;
-
+			display: flex;
+		
+			font-size: 25px;
+			position: absolute;
+			left:50%;
+			transform:translate(-50%,-30%);
+			width: 220px;
+			justify-content: center;
+			white-space: nowrap;
+			visibility: hidden;
 		}
 		.portfolio__img_subtitle{
-			display: none;
-
-		}
-		
+			display: flex;
 			
-	
-.portfolio__img_inner_bottom {
-	display: none;
-}
+			font-size: 25px;
+			position: absolute;
+			left:50%;
+			transform:translate(-50%,0);
+			visibility: hidden;
+		}
 .portfolio__img_button:hover{
 	background-color: white;
 	border: solid black 2px;
@@ -270,48 +296,72 @@ body, p ,h1,h2,h3,h4,h5,h6, li, ul {
 }
 .portfolio__img_button {
 	margin: 0 auto;
-	display: none;
+	display: flex;
 	border: solid white 2px;
 	background-color: transparent;
 	color: white;
 	font-size: 20px;
+	justify-content: center;
+	visibility: hidden;
 	
 }
-	.portfolio__work:hover  {
-		.portfolio__img{
-			filter:brightness(50%); 
-			
-		}
-		.portfolio__img_title{
-			position: absolute;
-			display: flex;
-			left: 50%;
-			font-size: 25px;
-			
-			width: 220px;
-			transform: translate(-50%, 20%);
-			z-index: 5;
-			text-transform: unset;
-			justify-content: center;
-		}
-		.portfolio__img_subtitle{
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			font-size: 20px;
-			left: 50%;
-			max-width: 200px;
-			transform: translate(-50%, 120%);
-			transition: transform 0.4s 0.1s;
-			z-index: 5;
-		}
-		.button_link{
-			transform: translate(0%, -140%);
-			transition: transform 0.4s 0.1s;
-			justify-content: center;
-			display: flex;
-		}
-		.portfolio__img_button{
-			display: flex;
-		}
+.button_link{
+	visibility: hidden;
+	position: absolute;
+	transform: translate(70%, -100%);
+}
+			.portfolio__work:hover  {
+				.portfolio__img{
+					filter:brightness(50%); 
+					
+				}
+				.portfolio__img_title{
+					
+				
+					left: 50%;
+					color: white;
+					
+					width: 220px;
+					transform: translate(-50%, 20%);
+					z-index: 5;
+					text-transform: unset;
+					visibility: visible;
+					transition: transform 0.5s 0.2s;
+				}
+				.portfolio__img_subtitle{
+					color: white;
+					visibility: visible;
+				
+					left: 50%;
+					max-width: 200px;
+					transform: translate(-50%, 120%);
+					transition: transform 0.4s 0.1s;
+					z-index: 5;
+				}
+				.button_link{
+					transform: translate(70%, -160%);
+					transition: transform 0.4s 0.1s;
+					justify-content: center;
+					display: flex;
+					position: absolute;
+					visibility: visible;
+				}
+				.portfolio__img_button{
+					visibility: visible;
+				}
+				.portfolio__img_button{
+					display: flex;
+
+				}
+			}
+	.text_for_arrow_down{
+		text-transform: uppercase;
+		writing-mode: vertical-lr;
+		color: white;
+		position: relative;
+		transform: translate(120%,0%);
+		left:  98%;
+	}
+	.icon_down{
+		color: white;
 	}
